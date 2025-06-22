@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE - Professional Community Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="adblock-detector" content="no">
+    <script>
+        if (typeof browser === 'undefined') {
+            window.browser = window.chrome || null;
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <button class="logo-btn" onclick="window.location.reload()">UNIVERSE</button>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search communities, members, topics...">
+            </div>
+
+            <div class="header-controls">
+                <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                <button class="profile-btn"><i class="fas fa-user"></i></button>
+                <button class="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="community-section">
+                <h2 class="section-title">Communities</h2>
+                <div class="community-buttons">
+                    <button class="community-btn active"><i class="fas fa-robot"></i> AIML</button>
+                    <button class="community-btn"><i class="fas fa-shield-alt"></i> Cybersecurity</button>
+                    <button class="community-btn"><i class="fas fa-code"></i> Full Stack</button>
+                    <button class="community-btn"><i class="fas fa-microchip"></i> IoT</button>
+
+                    <div class="recommended-section">
+                        <h3 class="subsection-title">Recommended</h3>
+                        <button class="community-btn"><i class="fas fa-university"></i> BCCS</button>
+                        <button class="community-btn"><i class="fas fa-chart-line"></i> BBA</button>
+                        <button class="community-btn"><i class="fas fa-tv"></i> BTMC</button>
+                        <button class="community-btn"><i class="fas fa-briefcase"></i> MBA</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <section class="card main-discussion">
+                <div class="sub-header">
+                    <h2><i class="fas fa-shield-alt"></i> Cybersecurity Hub</h2>
+                    <div class="sub-controls">
+                        <button class="sub-btn active">Discussions</button>
+                        <button class="sub-btn">Events</button>
+                    </div>
+                </div>
+                
+                <div class="discussion-feed">
+                    <div class="message received">
+                        <div class="message-header">
+                            <span class="user">Admin</span>
+                            <span class="time">10:00 AM</span>
+                        </div>
+                        <p>Welcome to the Cybersecurity community! Let's discuss latest trends and best practices.</p>
+                    </div>
+                </div>
+
+                <div class="message-input">
+                    <input type="text" placeholder="Contribute to the discussion...">
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-sidebar">
+            <section class="card member-section">
+                <h2 class="section-title"><i class="fas fa-users"></i> Active Members</h2>
+                <div class="member-list">
+                    <div class="member-item">
+                        <img src="https://via.placeholder.com/40" alt="profile" class="member-photo">
+                        <div class="member-info">
+                            <span class="member-name">Sarah Johnson</span>
+                            <span class="member-role">Security Analyst</span>
+                        </div>
+                        <button class="connect-btn">Connect</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card chat-box">
+                <h2 class="section-title"><i class="fas fa-comments"></i> Group Chat</h2>
+                <div class="chat-messages">
+                    <div class="message sent">
+                        <p>Hello everyone!</p>
+                        <span class="timestamp">10:01 AM</span>
+                    </div>
+                    <div class="message received">
+                        <p>Welcome to the group!</p>
+                        <span class="timestamp">10:02 AM</span>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type your message...">
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <h2 class="logo">UNIVERSE</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-users"></i>
+                    Members
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-comments"></i>
+                    Discussions
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    Analytics
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <div class="top-bar">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="user-profile">
+                    <button class="profile-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Total Members</h3>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">1,234</span>
+                        <span class="stat-change positive">+12%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <i class="fas fa-comment"></i>
+                        <h3>Active Discussions</h3>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">89</span>
+                        <span class="stat-change positive">+8%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Engagement Rate</h3>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">74%</span>
+                        <span class="stat-change negative">-3%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Community Engagement</h3>
+                <canvas id="engagementChart"></canvas>
+            </div>
+
+            <div class="activity-card">
+                <h3>Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>New post in Cybersecurity group</p>
+                            <span class="activity-time">2h ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>5 new members joined</p>
+                            <span class="activity-time">4h ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>Upcoming webinar announced</p>
+                            <span class="activity-time">6h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: support@universe.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p class="copyright">&copy; 2024 UNIVERSE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="auth-modal" class="auth-modal">
+        <div class="auth-content">
+            <span class="close-auth">&times;</span>
+            <h2>Welcome to UNIVERSE</h2>
+            <form id="auth-form" onsubmit="return false;">
+                <div class="form-group">
+                    <input type="email" id="auth-email" placeholder="Email" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="auth-password" placeholder="Password" required autocomplete="current-password">
+                </div>
+                <button type="submit" id="auth-submit">Sign In</button>
+            </form>
+            <div class="auth-links">
+                <a href="#" id="toggle-auth">Create Account</a>
+                <a href="#" id="forgot-password">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
